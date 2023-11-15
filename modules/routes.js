@@ -1,3 +1,4 @@
+// routes
 import db from "../Database/index.js";
 
 function ModuleRoutes(app) {
