@@ -36,7 +36,7 @@ function CourseRoutes(app) {
     console.log("course", course);
     console.log("id", id);
     Database.courses = Database.courses.map((c) =>
-      c._id === id ? { c, ...course } : c
+      c._id === id ? { ...c, ...course } : c
     );
     res.sendStatus(204);
   });
